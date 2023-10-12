@@ -1,8 +1,10 @@
 import processing.core.PApplet;
+import java.util.Random;
 
 public class Sketch extends PApplet {
-	
-	
+	Random Random = new Random();
+	int RandomX = Random.nextInt((350 - 50) + 1) + 50;
+  int RandomY = Random.nextInt((350 - 50) + 1) + 50;
   /**
    * Called once at the beginning of execution, put your size all in this method
    */
@@ -16,7 +18,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(210, 255, 173); 
   }
 
   /**
